@@ -104,6 +104,19 @@
       animation: floatSlow 6s ease-in-out infinite;
     }
 
+    /* True Transparent Flag Counter Styling */
+    .flag-counter-transparent img {
+      mix-blend-mode: screen;
+      background: transparent !important;
+      border: none !important;
+      opacity: 0.85;
+      transition: opacity 0.3s ease;
+    }
+
+    .flag-counter-transparent img:hover {
+      opacity: 1;
+    }
+
     /* Custom Scrollbar */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #070a12; }
@@ -125,7 +138,7 @@
       
       <!-- LOGO -->
       <a href="#" class="flex items-center gap-3 group relative z-10">
-        <img src="236042795.png" alt="Veni Logo" class="h-10 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.onerror=null; this.src='https://via.placeholder.com/140x45/98E2E6/000000?text=veni';">
+        <img src="logo.png" alt="Veni Logo" class="h-10 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.onerror=null; this.src='https://via.placeholder.com/140x45/98E2E6/000000?text=veni';">
       </a>
 
       <!-- Desktop Navigation -->
@@ -479,13 +492,13 @@
       
       <div class="border-b border-slate-800 pb-4">
         <h3 class="text-xl font-extrabold text-white tracking-tight">Terms of Service, Legal Coverage & Privacy Notice</h3>
-        <p class="text-slate-400 text-[11px] mt-1">Questions? Contact Veni Advisory Legal Counsel</p>
+        <p class="text-slate-400 text-[11px] mt-1">Last Updated: October 2026 | Veni Advisory Legal Department</p>
       </div>
 
       <!-- Section 1 -->
       <div class="space-y-2">
         <h4 class="text-slate-100 font-bold text-sm">1. Certificate Issuance & Academic Credit Disclosure</h4>
-        <p>All certificates, digital credentials, and course completion documents awarded through any of our cohorts are issued strictly and exclusively by Veni Advisory. The third-party universities mentioned across this platform do not award degrees, official academic credits, diplomas, or institutional certificates for these courses.</p>
+        <p>All certificates, digital credentials, and course completion documents awarded through our specialized technical cohorts (including Reinforcement Learning, Quantum Computing, and Computational Neurodynamics) are issued strictly and exclusively by Veni Advisory. The third-party universities mentioned across this platform do not award degrees, official academic credits, diplomas, or institutional certificates for these courses.</p>
       </div>
 
       <!-- Section 2 -->
@@ -535,9 +548,17 @@
   <!-- FOOTER -->
   <footer class="relative z-10 bg-slate-950 border-t border-slate-800/80 py-10 px-4 text-xs text-slate-500">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      
       <div class="flex items-center gap-3">
-        <img src="236042795.png" alt="Veni Logo" class="h-6 w-auto object-contain opacity-70" onerror="this.onerror=null; this.src='https://via.placeholder.com/100x30/98E2E6/000000?text=veni';">
+        <img src="logo.png" alt="Veni Logo" class="h-6 w-auto object-contain opacity-70" onerror="this.onerror=null; this.src='https://via.placeholder.com/100x30/98E2E6/000000?text=veni';">
         <p>© 2026 Veni Advisory. All rights reserved.</p>
+      </div>
+
+      <!-- Floating Transparent Flag Counter -->
+      <div class="flex items-center justify-center flag-counter-transparent my-2 md:my-0">
+        <a href="https://info.flagcounter.com/9ubc" target="_blank" rel="noopener noreferrer">
+          <img src="https://s05.flagcounter.com/count2/9ubc/bg_000000/txt_FFFFFF/border_000000/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter">
+        </a>
       </div>
 
       <div class="flex flex-wrap items-center gap-6">
@@ -545,6 +566,7 @@
           Privacy Notice, Terms & Comprehensive Legal Coverage
         </button>
       </div>
+
     </div>
   </footer>
 
